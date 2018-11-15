@@ -1,0 +1,321 @@
+
+
+<!-- Navigation Bar-->
+
+<header id="topnav">
+  <div class="topbar-main">
+    <div class="container-fluid">
+
+      <!-- Logo container-->
+      <div class="logo">
+        <!-- Text Logo -->
+        <!--<a href="index.html" class="logo">-->
+        <!--Upcube-->
+        <!--</a>-->
+        <!-- Image Logo -->
+        <a  class="logo">
+          <!--<img src="node_modules/adminbsb-materialdesign/images/logo-sm.png" alt="" height="22" class="logo-small">-->
+          <!--<img src="node_modules/adminbsb-materialdesign/images/logo-sm.png" alt="" height="24" class="logo-large">-->
+          <img src="node_modules/adminbsb-materialdesign/images/users/amila.jpg" alt="" height="50" class="rounded-circle">
+          &nbsp; &nbsp; Manage Profile Form
+        </a>
+
+      </div>
+      <!-- End Logo container-->
+
+
+      <div class="menu-extras topbar-custom">
+
+        <!-- Search input -->
+
+
+        <ul class="list-inline float-right mb-0">
+          <!-- Search -->
+
+          <!-- Messages-->
+          <li class="list-inline-item dropdown notification-list">
+            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown"  role="button"
+               aria-haspopup="false" aria-expanded="false">
+              <i class="mdi mdi-email-outline noti-icon"></i>
+              <span class="badge badge-danger noti-icon-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
+              <!-- item-->
+              <div class="dropdown-item noti-title">
+                <h5><span class="badge badge-danger float-right">745</span>Messages</h5>
+              </div>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <div class="notify-icon"><img src="node_modules/adminbsb-materialdesign/images/users/avatar-2.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                <p class="notify-details"><b>Charles M. Jones</b><small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <div class="notify-icon"><img src="node_modules/adminbsb-materialdesign/images/users/avatar-3.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                <p class="notify-details"><b>Thomas J. Mimms</b><small class="text-muted">You have 87 unread messages</small></p>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <div class="notify-icon"><img src="node_modules/adminbsb-materialdesign/images/users/avatar-4.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                <p class="notify-details"><b>Luis M. Konrad</b><small class="text-muted">It is a long established fact that a reader will</small></p>
+              </a>
+
+              <!-- All-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                View All
+              </a>
+
+            </div>
+          </li>
+          <!-- notification-->
+          <li class="list-inline-item dropdown notification-list">
+            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" role="button"
+               aria-haspopup="false" aria-expanded="false">
+              <i class="mdi mdi-bell-outline noti-icon"></i>
+              <span class="badge badge-danger noti-icon-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
+              <!-- item-->
+              <div class="dropdown-item noti-title">
+                <h5>Notification (3)</h5>
+              </div>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                <p class="notify-details"><b>Your order is placed</b><small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                <p class="notify-details"><b>New Message received</b><small class="text-muted">You have 87 unread messages</small></p>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <div class="notify-icon bg-info"><i class="mdi mdi-martini"></i></div>
+                <p class="notify-details"><b>Your item is shipped</b><small class="text-muted">It is a long established fact that a reader will</small></p>
+              </a>
+
+              <!-- All-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                View All
+              </a>
+
+            </div>
+          </li>
+          <!-- Userlogin-->
+          <li class="list-inline-item dropdown notification-list">
+            <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" role="button"
+               aria-haspopup="false" aria-expanded="false">
+              <img src="node_modules/adminbsb-materialdesign/images/users/log-outt.jpg" alt="user" class="rounded-circle">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+
+              <div class="dropdown-divider"></div>
+              <a (click)="logOUt()" class="dropdown-item"><i class="dripicons-exit text-muted" required></i> Logout</a>
+            </div>
+          </li>
+          <li class="menu-item list-inline-item">
+            <!-- Mobile menu toggle-->
+            <a class="navbar-toggle nav-link">
+              <div class="lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+            <!-- End mobile menu toggle-->
+          </li>
+
+        </ul>
+      </div>
+
+
+      <div class="clearfix"></div>
+
+    </div>
+  </div>
+
+  <div class="navbar-custom">
+    <div class="container-fluid">
+      <div id="navigation">
+
+        <ul class="navigation-menu">
+
+          <li class="has-submenu">
+            <a (click)="home()"><i class="ti-home"></i>Home</a>
+          </li>
+
+
+          <li class="has-submenu">
+            <a routerLink="/manageProfile" routerLinkActive="active"><i class="ti-dashboard"></i>User Profile Dashboard</a>
+          </li>
+
+
+          <li class="has-submenu">
+            <a><i class="ti-user"></i> Manage User Personal Details</a>
+            <ul class="submenu">
+              <li><a routerLink="/managePersonalDetails" routerLinkActive="active" href=""><b>Update and Remove User Details</b></a></li>
+
+            </ul>
+
+          </li>
+
+          <li class="has-submenu">
+            <a><i class="ti-star"></i>Manage Questions</a>
+            <ul class="submenu">
+              <li><a routerLink="/viewAllquestonsofuniqueUser" routerLinkActive="active" href="">View Your All Questions</a></li>
+
+            </ul>
+          </li>
+
+          <li class="has-submenu">
+            <a><i class="ti-pencil-alt"></i>Manage Answers</a>
+            <ul class="submenu">
+              <li><a routerLink="/MgnageUsersUniqueAnswersComponent" routerLinkActive="active" href="">View Your All Answers</a></li>
+
+            </ul>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<br>
+
+<form name="Form" [formGroup]="Form">
+
+  <div class="wrapper fadeInDown">
+    <div class="container-fluid">
+
+      <!-- Page-Title -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-title-box">
+            <div class="btn-group pull-right">
+              <ol class="breadcrumb hide-phone p-0 m-0">
+                <li ><a href=""></a></li>
+                <li ><a href=""></a></li>
+                <li ></li>
+              </ol>
+            </div>
+            <h4 class="page-title">User Form</h4>
+          </div>
+        </div>
+      </div>
+      <!-- end page title end breadcrumb -->
+
+      <div class="row">
+        <div class="col-12">
+          <div class="card m-b-30">
+            <div class="card-body">
+
+              <h4 class="mt-0 header-title">Manage User Personal Details</h4>
+              <br>
+
+              <div class="form-group row">
+                <label  class="col-sm-2 col-form-label">User Nic</label>
+                <div class="col-sm-10">
+                  <input type="text" [(ngModel)]="selectedUser.nic" class="form-control" formControlName="nicNumber"  [ngClass]="{'is-invalid': Form.get('nicNumber').touched && Form.get('nicNumber').invalid}" placeholder="UserNic" >
+                  <div *ngIf="Form.get('nicNumber').touched && Form.get('nicNumber').invalid" class="invalid-feedback">
+                    <span>pattern : 943252254v</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label  class="col-sm-2 col-form-label">User Email</label>
+                <div class="col-sm-10">
+                  <input [(ngModel)]="selectedUser.eMail" class="form-control" type="text" formControlName="email" [ngClass]="{'is-invalid': Form.get('email').touched && Form.get('email').invalid}"  placeholder="Edit E-mail">
+                  <div *ngIf="Form.get('email').touched && Form.get('email').invalid" class="invalid-feedback">
+                    <span>Enter Valied E-mail</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label  class="col-sm-2 col-form-label">User Name</label>
+                <div class="col-sm-10">
+                  <input [(ngModel)]="selectedUser.name" class="form-control" formControlName="userName" type="text"  [ngClass]="{'is-invalid': Form.get('userName').touched && Form.get('userName').invalid}" placeholder="Edit User Name" >
+                  <div *ngIf="Form.get('userName').touched && Form.get('userName').invalid" class="invalid-feedback">
+                    <span>Enter only charactors</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label  class="col-sm-2 col-form-label">User Address</label>
+                <div class="col-sm-10">
+                  <input [(ngModel)]="selectedUser.address" class="form-control" type="text" placeholder="Edit Email" [ngModelOptions]="{standalone: true}" required >
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label  class="col-sm-2 col-form-label">User Password</label>
+                <div class="col-sm-10">
+                  <input [(ngModel)]="selectedUser.password" class="form-control" type="password"  placeholder="User Password" [ngModelOptions]="{standalone: true}" required>
+
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label  class="col-sm-2 col-form-label">User Phone Number</label>
+                <div class="col-sm-10">
+                  <input [(ngModel)]="selectedUser.tel" class="form-control" type="text" placeholder="Edit Phone Number" formControlName="phoneNumber" [ngClass]="{'is-invalid': Form.get('phoneNumber')&& Form.get('phoneNumber').invalid}">
+                  <div *ngIf="Form.get('phoneNumber').touched && Form.get('phoneNumber').invalid" class="invalid-feedback">
+                    <span>Pattern : 075-6367321</span>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label  class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                  <!--<input (click)="findUserByNic()" type="submit" class="btn btn-success waves-effect wa" value="Search User" >&nbsp;&nbsp;&nbsp;-->
+                  <input (click)="updateUser()" type="submit" class="btn btn-primary waves-effect wa" value="Update User" [disabled]="!Form.valid">&nbsp;&nbsp;&nbsp;
+                  <input type="submit" class="btn btn-danger waves-effect wa" value="Remove User" [disabled]="!Form.valid">
+                </div>
+              </div>
+
+          </div>
+          </div>
+        </div> <!-- end col -->
+      </div> <!-- end row -->
+
+    </div> <!-- end container -->
+  </div>
+  <!-- end wrapper -->
+
+
+
+</form>
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        © 2018 Upcube - Created by <i class="mdi mdi-heart text-danger"></i>Amila.
+      </div>
+    </div>
+  </div>
+</footer>
+
+

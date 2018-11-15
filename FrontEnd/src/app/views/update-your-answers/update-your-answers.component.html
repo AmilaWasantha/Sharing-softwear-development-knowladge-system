@@ -1,0 +1,313 @@
+
+
+<!-- Navigation Bar-->
+
+<header id="topnav">
+  <div class="topbar-main">
+    <div class="container-fluid">
+
+      <!-- Logo container-->
+      <div class="logo">
+        <!-- Text Logo -->
+        <!--<a href="index.html" class="logo">-->
+        <!--Upcube-->
+        <!--</a>-->
+        <!-- Image Logo -->
+        <a  class="logo">
+          <!--<img src="node_modules/adminbsb-materialdesign/images/logo-sm.png" alt="" height="22" class="logo-small">-->
+          <!--<img src="node_modules/adminbsb-materialdesign/images/logo-sm.png" alt="" height="24" class="logo-large">-->
+          <img src="node_modules/adminbsb-materialdesign/images/users/amila.jpg" alt="" height="50" class="rounded-circle">
+          &nbsp; &nbsp; view Your Answers Form
+        </a>
+
+      </div>
+      <!-- End Logo container-->
+
+
+      <div class="menu-extras topbar-custom">
+
+        <!-- Search input -->
+
+
+        <ul class="list-inline float-right mb-0">
+          <!-- Search -->
+
+          <!-- Messages-->
+          <li class="list-inline-item dropdown notification-list">
+            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown"  role="button"
+               aria-haspopup="false" aria-expanded="false">
+              <i class="mdi mdi-email-outline noti-icon"></i>
+              <span class="badge badge-danger noti-icon-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
+              <!-- item-->
+              <div class="dropdown-item noti-title">
+                <h5><span class="badge badge-danger float-right">745</span>Messages</h5>
+              </div>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <div class="notify-icon"><img src="node_modules/adminbsb-materialdesign/images/users/avatar-2.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                <p class="notify-details"><b>Charles M. Jones</b><small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <div class="notify-icon"><img src="node_modules/adminbsb-materialdesign/images/users/avatar-3.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                <p class="notify-details"><b>Thomas J. Mimms</b><small class="text-muted">You have 87 unread messages</small></p>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <div class="notify-icon"><img src="node_modules/adminbsb-materialdesign/images/users/avatar-4.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                <p class="notify-details"><b>Luis M. Konrad</b><small class="text-muted">It is a long established fact that a reader will</small></p>
+              </a>
+
+              <!-- All-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                View All
+              </a>
+
+            </div>
+          </li>
+          <!-- notification-->
+          <li class="list-inline-item dropdown notification-list">
+            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" role="button"
+               aria-haspopup="false" aria-expanded="false">
+              <i class="mdi mdi-bell-outline noti-icon"></i>
+              <span class="badge badge-danger noti-icon-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
+              <!-- item-->
+              <div class="dropdown-item noti-title">
+                <h5>Notification (3)</h5>
+              </div>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                <p class="notify-details"><b>Your order is placed</b><small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                <p class="notify-details"><b>New Message received</b><small class="text-muted">You have 87 unread messages</small></p>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <div class="notify-icon bg-info"><i class="mdi mdi-martini"></i></div>
+                <p class="notify-details"><b>Your item is shipped</b><small class="text-muted">It is a long established fact that a reader will</small></p>
+              </a>
+
+              <!-- All-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                View All
+              </a>
+
+            </div>
+          </li>
+          <!-- Userlogin-->
+          <li class="list-inline-item dropdown notification-list">
+            <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" role="button"
+               aria-haspopup="false" aria-expanded="false">
+              <img src="node_modules/adminbsb-materialdesign/images/users/log-outt.jpg" alt="user" class="rounded-circle">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+
+              <div class="dropdown-divider"></div>
+              <a (click)="logOut()" class="dropdown-item"><i class="dripicons-exit text-muted" required></i> Logout</a>
+            </div>
+          </li>
+          <li class="menu-item list-inline-item">
+            <!-- Mobile menu toggle-->
+            <a class="navbar-toggle nav-link">
+              <div class="lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+            <!-- End mobile menu toggle-->
+          </li>
+
+        </ul>
+      </div>
+
+
+      <div class="clearfix"></div>
+
+    </div>
+  </div>
+
+  <div class="navbar-custom">
+    <div class="container-fluid">
+      <div id="navigation">
+
+        <ul class="navigation-menu">
+
+          <li class="has-submenu">
+            <a (click)="home()"><i class="ti-home"></i>Home</a>
+          </li>
+
+
+          <li class="has-submenu">
+            <a routerLink="/manageProfile" routerLinkActive="active"><i class="ti-dashboard"></i>User Profile Dashboard</a>
+          </li>
+
+
+          <li class="has-submenu">
+            <a><i class="ti-user"></i> Manage User Personal Details</a>
+            <ul class="submenu">
+              <li><a routerLink="/managePersonalDetails" routerLinkActive="active" href=""><b>Update and Remove User Details</b></a></li>
+
+            </ul>
+
+          </li>
+
+          <li class="has-submenu">
+            <a><i class="ti-pencil-alt"></i>Manage Questions</a>
+            <ul class="submenu">
+              <li><a routerLink="/viewAllquestonsofuniqueUser" routerLinkActive="active" href="">View Your All Questions</a></li>
+
+            </ul>
+          </li>
+
+          <li class="has-submenu">
+            <a><i class="ti-pencil-alt"></i>Manage Answers</a>
+            <ul class="submenu">
+              <li><a routerLink="/MgnageUsersUniqueAnswersComponent" routerLinkActive="active" href="">View Your All Answers</a></li>
+
+            </ul>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<br>
+
+<br>
+
+
+<form ngForm="questionsCatogoryForm">
+  <div class="wrapper fadeInDown">
+    <div class="container-fluid">
+
+      <!-- Page-Title -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-title-box">
+            <div class="btn-group pull-right">
+              <ol class="breadcrumb hide-phone p-0 m-0">
+                <li class=""><a href="#"></a></li>
+                <li class=""><a href="#"></a></li>
+                <li class="breadcrumb-item active"></li>
+              </ol>
+            </div>
+            <h4 class="page-title">Update Your Answer</h4>
+          </div>
+        </div>
+      </div>
+      <!-- end page title end breadcrumb -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card m-b-30">
+            <div class="card-body">
+
+              <div class="m-t-20">
+                <h6 class="text-muted"><b>Questions By</b></h6>
+                <input [(ngModel)]="selectedAnswer.questionsBy" type="text" disabled class="form-control" maxlength="25" name="placement"  placeholder="" [ngModelOptions]="{standalone:true}" required >
+              </div>
+              <br>
+
+              <div class="m-t-20">
+                <h6 class="text-muted"><b>Questions Description</b></h6>
+
+                <textarea  [(ngModel)]="selectedAnswer.questionsDescription" class="form-control" maxlength="100000" rows="10" disabled [ngModelOptions]="{standalone:true}" required></textarea>
+              </div>
+
+              <br>
+
+              <div class="m-t-20">
+                <h6 class="text-muted"><b>Answer By</b></h6>
+                <input [(ngModel)]="selectedAnswer.answerBy" type="text" class="form-control" maxlength="25" name="placement" disabled [ngModelOptions]="{standalone:true}" required >
+              </div>
+              <br>
+
+              <div class="m-t-20">
+                <h6 class="text-muted"><b>Answer User Nic</b></h6>
+                <input [(ngModel)]="selectedAnswer.userDTO.nic" type="text" class="form-control" maxlength="25" name="placement" disabled [ngModelOptions]="{standalone:true}" required >
+              </div>
+              <br>
+
+              <div class="m-t-20">
+                <h6 class="text-muted"><b>Answer Description</b></h6>
+
+                <textarea [(ngModel)]="selectedAnswer.answerDescription" id="textarea" class="form-control" maxlength="100000" rows="10"  [ngModelOptions]="{standalone:true}" required ></textarea>
+              </div>
+              <br>
+
+
+
+              <div class="m-t-20">
+                <h6 class="text-muted"><b>Answer Status</b></h6>
+                <input [(ngModel)]="selectedAnswer.status" type="text" class="form-control" maxlength="25" name="placement" disabled [ngModelOptions]="{standalone:true}" required >
+              </div>
+              <br>
+
+              <div class="m-t-5">
+                <div class="form-group">
+                  <input (click)="updateAnswer()" type="submit"  class="btn btn-primary waves-effect wa" value="Update Your Answer" required>
+                </div>
+              </div>
+
+              <br><br>
+
+              <div class="media">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1 font-18">Note :-</h5>
+                  You can update your answer now.
+                </div>
+                <img class="d-flex ml-3 rounded-circle" src="node_modules/adminbsb-materialdesign/images/users/amila.jpg" alt="Generic placeholder image" height="64">
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div> <!-- end container -->
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        © 2018 Upcube - Created by <i class="mdi mdi-heart text-danger"></i>Amila.
+      </div>
+    </div>
+  </div>
+</footer>
+
+
